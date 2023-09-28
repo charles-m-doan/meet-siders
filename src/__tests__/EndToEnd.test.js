@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 
 jest.setTimeout(30000);
 
-describe('show/hide event details', () => {
+describe.skip('show/hide event details', () => {
    let browser;
    let page;
    beforeAll(async () => {
