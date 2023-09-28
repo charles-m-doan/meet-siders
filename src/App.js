@@ -26,6 +26,8 @@ class App extends Component {
    }
 
    updateEvents = (location, eventCount) => {
+
+    if (this.mounted) {
       if (!eventCount) {
         getEvents().then((events) => {
           const locationEvents =
@@ -75,6 +77,7 @@ class App extends Component {
           });
         });
       }
+    }
     };
   
 
